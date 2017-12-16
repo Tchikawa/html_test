@@ -10,10 +10,47 @@ main{
     width: 800px;
     height: 480px;
     background-color: greenyellow;
-    display:flex;
-    justify-content:space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .img_cat{
-    padding:20;
+    padding: 20;
+    width: 40%;
+    flex: 0 1 30%;
+}
+
+.baloon1{
+    grid-area: b1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20;
+}
+
+.baloon2{
+    grid-area: b2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20;
+}
+
+.baloon3{
+    grid-area: b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20;
+}
+
+.wrap{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+    "b1 b1"
+    "b2 b3";
+    padding : 20;
 }
