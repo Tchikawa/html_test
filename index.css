@@ -48,6 +48,7 @@ main{
     color: #555;
     background: #ffffff;
     border-radius: 15px;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,9 +68,10 @@ main{
 .wrap{
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 170px 170px;
     grid-template-areas:
     "b1 b1"
     "b2 b3";
-    padding : 20;
+    padding : 20px;
+    font-size: 20px;
 }
