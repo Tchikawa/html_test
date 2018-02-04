@@ -6,13 +6,14 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 main{
     display: grid;
     width: 800px;
     height: 480px;
     grid-template-rows: 480px;
     grid-template-columns: 320px 1fr;
-    background-color: greenyellow;
+    background-color: #BBFEFF;
 }
 
 .left{
@@ -30,9 +31,9 @@ main{
 .img_cat{
     width: 100%;
     height: 100%;
-}
+  }
 
-.baloon1{
+.baloon{
     position: relative;
     background: #ffffff;
     border-radius: 15px;
@@ -41,12 +42,11 @@ main{
     justify-content: center;
     border: solid 3px #787878;
     margin-left: 15px;
-    height: 55%;
+    height: calc(100% - 40px);
     box-sizing: border-box;
-    font-size: 30px
-}
+  }
 
-.baloon1::before{
+.baloon::before{
     content: "";
     position: absolute;
     top: 50%;
@@ -57,7 +57,7 @@ main{
     z-index: 2;
 }
 
-.baloon1::after{
+.baloon::after{
     content: "";
     position: absolute;
     top: 50%;
@@ -68,56 +68,23 @@ main{
     z-index: 1;
 }
 
-.flex-box{
-    display: flex;
-}
+.message1{
+    font-size: 50px;
+  }
 
+.message2{
+    font-size: 30px;
+    position: absolute;
+    bottom: 0px;
+    margin: auto;
+  }
 
-.baloon2{
-    background: #ffffff;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: solid 3px #787878;
-    height: 100%;
-    width: 100%;
-}
-
-.baloon3{
-    background: #ffffff;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 3px #787878;
-    height: 100%;
-    width: 100%;
-    font-size: 20px;
+div{
+    color: #787878;
 }
 
 .button{
     display: block;
     text-decoration: none;
     color: #787878;
-    width: 50%;
-    height: 35%;
-    margin: 10px 5px 0px 15px;
-}
-
-.upper-message{
-    font-size: 15px;
-}
-
-.lower-message{
-    font-size: 20px;
-}
-
-div{
-    color: #787878;
-}
-
-.messsage-user{
-    font-size: 20px;
 }
